@@ -8,7 +8,8 @@ http = require('http');
 var onRequest = function (req, res){
 
 	if (req.method === 'GET') {
-		res.end(messages.stringify())
+		// set headers here, look at the example from Tuesday.
+		res.end(JSON.stringify(messages))
 	}
 
 
